@@ -17,6 +17,9 @@ const bahanReducer = (state = initialStateBahan, action) => {
     }
 
     return newState;
+  }else {
+    
+    return state;
   }
 
   return state;

@@ -1,23 +1,17 @@
 import React, { Component } from 'react'
-import './App.css';
 import store from './store';
-import { buatDonatAction } from './action/buatDonatAction';
 import { buatKasAction } from './action/buatKasAction';
 import { buatkasirAction } from './action/buatKasirAction';
+import { buatDonatAction } from './action/buatDonatAction'
+import './App.css';
  
 export default class App extends Component {
 
   render() {
-
-    // console.log(store.getState());
-
-    const { bahan, kas, kasir } = store.getState();
-    //untuk merubah state melalui action 
-    store.dispatch(buatDonatAction)
-    // store.dispatch(buatKasAction)
-    // store.dispatch(buatkasirAction)
-    // console.log(store.getState())
     // 🍩 &nbsp; 🍰 &nbsp; 🛒 &nbsp; 🍩
+    const { bahan,kasir,kas } = store.getState();
+    store.dispatch(buatDonatAction)
+
     return (
       <div className='container'>
         <div className='header'>
@@ -43,6 +37,10 @@ export default class App extends Component {
         <div className='section-bottom'>
           <span role='img' aria-label='cart'>🛒</span>
           <h3>Isi Ulang Bahan</h3>
+        </div>
+        <div className='section-top'>
+          <p>Kasir : {kasir.nama}</p>
+          <p>Saldo : {kas.kas}</p>
         </div>
       </div>
     )

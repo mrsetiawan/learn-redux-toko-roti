@@ -1,5 +1,5 @@
 const initialState = {
-  nama: "mr setiawan"
+  nama: "Mr Setiawan"
 }
 
 const kasirReducer = (state = initialState, action) => {

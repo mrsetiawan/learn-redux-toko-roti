@@ -1,0 +1,74 @@
+@import './config-style.css';
+
+.container {
+    display: var(--d-flex);
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 900px;
+    height:var(--auto);
+    margin: 150px var(--auto);
+    box-sizing: border-box;
+    justify-content: var(--center);
+    align-items: var(--center);
+    border:1px solid var(--white);
+    padding: var(--spacing-15);
+    overflow: var(--hidden);
+  }
+  
+  .container > .header {
+    text-align: var(--center);
+    width: 100%;
+    color: var(--white);
+    padding-left: var(--spacing-15);
+    padding-right: var(--spacing-15);
+    margin: var(--m5);
+  }
+  
+  .container > .section-top {
+    text-align: var(--center);
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    padding: var(--spacing-15);
+    margin: var(--spacing-5);
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .container > .section-bottom {
+    width: 20%;
+    height: 105px;
+    text-align: var(--center); 
+    background-color: #D2691E;
+    margin: var(--spacing-5);
+    padding: 22px;
+    cursor: pointer;
+  }
+  
+  .header > span {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-5);
+  }
+  
+  .header > h3 {
+    font-size: 2rem;
+  }
+  
+  .header > button {
+    padding: 12px;
+    width: 70%;
+    border-radius: 7px;
+    background: var(--white);
+    outline: var(--none);
+    border: var(--none);
+    display: var(--block);
+    margin: var(--spacing-15);
+    cursor: pointer;
+    margin: var(--spacing-15) auto;
+    font-size: 17px;
+  }
+  
+  .section-bottom > h3,span {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  } 

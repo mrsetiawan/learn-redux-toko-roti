@@ -1,0 +1,16 @@
+:root {
+  /* color */
+  --hidden: hidden;
+  --center: center;
+  --white: white;
+  --black: black;
+  /* display */
+  --d-flex: flex;
+  --d-block: block;
+  --d-none: none;
+  /* spacing */
+  --auto: auto;
+  --spacing-15: 15px;
+  --spacing-10: 10px;
+  --spacing-5: 5px;
+}

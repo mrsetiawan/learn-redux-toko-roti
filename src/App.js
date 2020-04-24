@@ -1,48 +1,47 @@
 import React, { Component } from 'react'
 import './App.css';
 import store from './store';
-import styled from 'styled-components';
-
+import { buatDonatAction } from './action/buatDonatAction';
+import { buatKasAction } from './action/buatKasAction';
+import { buatkasirAction } from './action/buatKasirAction';
+ 
 export default class App extends Component {
 
   render() {
 
-    // const Container = styled.div`
-    //   display: flex;
-    //   flex-flow: row wrap;
-    //   width: 900px;
-    //   height:auto;
-    //   margin: 50px auto;
-    //   box-sizing: border-box;
-    //   justify-content: center;
-    //   border:1px solid white;
-    //   padding: 15px;
-    // `
+    // console.log(store.getState());
+
+    const { bahan, kas, kasir } = store.getState();
+    //untuk merubah state melalui action 
+    store.dispatch(buatDonatAction)
+    // store.dispatch(buatKasAction)
+    // store.dispatch(buatkasirAction)
+    // console.log(store.getState())
     // 🍩 &nbsp; 🍰 &nbsp; 🛒 &nbsp; 🍩
     return (
       <div className='container'>
         <div className='header'>
-          <h1>🍰</h1>
+          <span role='img' aria-label='cake'>🍰</span>
           <h3>Toko Roti Vzlooks</h3>
         </div>
         <div className='section-top'>
-          <p> 🍩 0 Donat &nbsp;&nbsp;  🍰 0 Cake</p>
+          <span role='img' aria-label='donuts'>🍩</span> 0 Donat &nbsp;&nbsp;  <span role='img' aria-label='cake'>🍰</span> 0 Cake
         </div>
         <div className='header'>
-          <button>Tepung 100</button>
-          <button>Cokelat 100</button>
-          <button>Cherry 50</button>
+          <button>Tepung {bahan.tepung}</button>
+          <button>Cokelat {bahan.coklat}</button>
+          <button>Cherry {bahan.cherry}</button>
         </div>
         <div className='section-bottom'>
-          <h3>🍩</h3>
+          <span role='img' aria-label='donuts'>🍩</span>
           <h3>Buat 1 Donat</h3>
         </div>
         <div className='section-bottom'>
-          <h3>🍰</h3>
+          <span role='img' aria-label='cake'>🍰</span>
           <h3>Buat 1 Cake</h3>
         </div>
         <div className='section-bottom'>
-          <h3>🛒</h3>
+          <span role='img' aria-label='cart'>🛒</span>
           <h3>Isi Ulang Bahan</h3>
         </div>
       </div>

@@ -1,11 +1,6 @@
-import { createStore } from 'redux'; 
+import { createStore } from 'redux';
+import rootReducer from './reducer/main'
 
-const state = {
-  tepung: 100,
-  coklat: 100,
-  cherry: 50
-};
-
-const store = createStore(() => state);
+const store = createStore(rootReducer);
 
 export default store;

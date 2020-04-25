@@ -6,15 +6,16 @@
     flex-direction: row;
     width: 900px;
     height:var(--auto);
-    margin: 150px var(--auto);
+    margin: 15px var(--auto);
     box-sizing: border-box;
     justify-content: var(--center);
     align-items: var(--center);
     border:1px solid var(--white);
     padding: var(--spacing-15);
     overflow: var(--hidden);
+    animation: var(--first-load);
   }
-  
+
   .container > .header {
     text-align: var(--center);
     width: 100%;
@@ -22,6 +23,7 @@
     padding-left: var(--spacing-15);
     padding-right: var(--spacing-15);
     margin: var(--m5);
+    animation: var(--first-load);
   }
   
   .container > .section-top {
@@ -33,6 +35,7 @@
     margin: var(--spacing-5);
     font-weight: 900;
     font-size: 20px;
+    animation: var(--first-load);
   }
   
   .container > .section-bottom {
@@ -43,6 +46,11 @@
     margin: var(--spacing-5);
     padding: 22px;
     cursor: pointer;
+    animation: var(--first-load);
+  }
+
+  div.section-bottom:hover {
+    opacity: .5;
   }
   
   .header > span {
@@ -52,6 +60,7 @@
   
   .header > h3 {
     font-size: 2rem;
+    animation: var(--first-load);
   }
   
   .header > button {
@@ -62,13 +71,29 @@
     outline: var(--none);
     border: var(--none);
     display: var(--block);
-    margin: var(--spacing-15);
     cursor: pointer;
-    margin: var(--spacing-15) auto;
+    margin: var(--spacing-5) auto;
     font-size: 17px;
+    animation: var(--first-load);
   }
   
   .section-bottom > h3,span {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    animation: var(--first-load);
   } 
+
+  .wrap-first-section {
+    display: var(--d-flex);
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 900px;
+    height:var(--auto);
+    margin: 15px var(--auto);
+    box-sizing: border-box;
+    justify-content: space-between;
+    border:1px solid var(--white);
+    padding: var(--spacing-15);
+    background-color: #D2691E;
+    animation: var(--first-load);
+  }

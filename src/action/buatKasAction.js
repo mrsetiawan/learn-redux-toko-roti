@@ -1,4 +1,4 @@
 export const buatKasAction = {
   type: 'BUAT_KAS_ACTION',
-  payload: 500000
+  payload: 5000
 }

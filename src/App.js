@@ -50,7 +50,6 @@ class App extends Component {
 
 //mengubah state yang ada di redux ke props component di react
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
     bahan: state.bahan,
     kas: state.kas,

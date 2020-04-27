@@ -1,9 +1,36 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "costumer": [
+    {
+      "id": 1,
+      "name": "muhamad rahmat setiawan"
+    },
+    {
+      "id": 2,
+      "name": "nurviza indah"
+    },
+    {
+      "id": 3,
+      "name": "muhamad"
+    },
+    {
+      "id": 4,
+      "name": "rahmat"
+    },
+    {
+      "id": 5,
+      "name": "rahmat"
+    },
+    {
+      "id": 6,
+      "name": "setiawan"
+    },
+    {
+      "id": 7,
+      "name": "nurviza"
+    },
+    {
+      "id": 8,
+      "name": "indah"
+    }
+  ]
 }

@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { buatKasAction } from './action/buatKasAction'
 import { buatkasirAction } from './action/buatKasirAction'
 import { buatDonatAction } from './action/buatDonatAction'
-import './App.css';
 
 class App extends Component {
 

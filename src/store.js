@@ -5,6 +5,9 @@ import reduxThunk from 'redux-thunk'
 
 const middlewares = applyMiddleware(reduxLogger, reduxThunk)
 
-const store = createStore(rootReducer, middlewares);
+const store = createStore(
+  rootReducer, 
+  middlewares,
+);
 
 export default store;

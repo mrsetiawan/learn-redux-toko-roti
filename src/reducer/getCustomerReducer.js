@@ -5,7 +5,7 @@ const getCustomerReducer = (state = initialState, action) => {
   if (action.type = 'GET_DATA_CUSTOMER') {
 
     const newState = {
-      data: action.customers
+      customer: action.customers
     }
 
     return newState

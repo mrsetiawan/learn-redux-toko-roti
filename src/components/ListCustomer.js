@@ -5,11 +5,10 @@ import getDataCustomer from '../action/getCustomerAction'
 class ListCustomer extends Component {
 
   componentDidMount() {
-    
+    console.log(this.props.dataCustomer())
   }
 
   render() {
-    console.log(this.props.customer)
     return (
       <>
         <div className='wrap-first-section'>

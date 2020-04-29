@@ -1,6 +1,7 @@
 import React from 'react';
 
-function AddCakeDonut() {
+function AddCakeDonut(props) {
+  console.log(props)
   return (
     <>
       <div className='section-bottom'>

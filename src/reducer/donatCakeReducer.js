@@ -1,16 +1,20 @@
-const initialState = {
-  tepung: 100,
-  coklat: 100,
-  keju: 30
+const intialState = {
+  donat: 0,
+  cake: 0
 }
 
-const donatCakeReducer = (state = initialState, action) => {
+const donatCakeReducer = (state = intialState, action) => {
 
-  // const newState = {
-  //   tepung:state.tepung,
-  //   coklat:state.coklat,
-  //   keju:state.keju
-  // }
+  if (action.type === 'DONAT_CAKE') {
+    
+    const newState = {
+      donat: state.donat + 1,
+      cake: state.cake
+    }
+
+    return newState
+  }
+
   return state
 }
 

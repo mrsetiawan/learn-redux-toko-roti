@@ -1,19 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import store from '../store'
-
-export default class Bahan extends Component {
-  
-  render() {
-
-    const { bahan } = store.getState();
-
-    return (
-      <div className='header'>
-        <button>Tepung {bahan.tepung}</button>
-        <button>Cokelat {bahan.coklat}</button>
-        <button>Cherry {bahan.cherry}</button>
-      </div>
-    )
-  }
+const Bahan = ({ coklat, keju, tepung }) => {
+  return (
+    <div className='header'>
+      <button>Tepung {tepung}</button>
+      <button>Cokelat {coklat}</button>
+      <button>Keju {keju}</button>
+    </div>
+  )
 }
+
+Bahan.propTypes = {
+  coklat: PropTypes.number.isRequired,
+  keju: PropTypes.number.isRequired,
+  tepung: PropTypes.number.isRequired
+}
+
+Bahan.defaultProps = {
+  coklat: 100,
+  keju: 30,
+  tepung: 100
+}
+
+export default Bahan;

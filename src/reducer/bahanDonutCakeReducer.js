@@ -6,7 +6,7 @@ const initialState = {
 
 const bahanDonutCakeReducer = (state = initialState, action) => {
 
-  if (action.type === 'DONAT_CAKE') {
+  if (action.type === 'ACTION_DONAT') {
     const newState = {
       tepung: state.tepung - 1,
       coklat: state.coklat - 1,
@@ -14,9 +14,23 @@ const bahanDonutCakeReducer = (state = initialState, action) => {
     }
 
     return newState
+
+  }else if (action.type === 'ACTION_CAKE') {
+
+    const newState = {
+      tepung: state.tepung - 1,
+      coklat: state.coklat,
+      keju: state.keju - 1
+    }
+
+    return newState
+
+  }else {
+
+    return state
+
   }
 
-  return state
 }
 
 export default bahanDonutCakeReducer

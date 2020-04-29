@@ -5,17 +5,28 @@ const intialState = {
 
 const donatCakeReducer = (state = intialState, action) => {
 
-  if (action.type === 'DONAT_CAKE') {
-    
+  if (action.type === 'ACTION_DONAT') {
+
     const newState = {
       donat: state.donat + 1,
       cake: state.cake
     }
-
     return newState
+
+  }else if (action.type == 'ACTION_CAKE') {
+
+    const newState = {
+      donat: state.donat,
+      cake: state.cake + 1
+    }
+    return newState
+
+  }else {
+
+    return state
+    
   }
 
-  return state
 }
 
 export default donatCakeReducer

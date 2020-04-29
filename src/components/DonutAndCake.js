@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function DonutAndCake({ donut, cake }) {
+function DonutAndCake({ donat, cake }) {
   return (
     <div className='section-top'>
-      <span role='img' aria-label='donuts'>🍩</span> {donut} Donat &nbsp;&nbsp;<span role='img' aria-label='cake'>🍰</span> {cake} Cake
+      <span role='img' aria-label='donuts'>🍩</span> {donat} Donat &nbsp;&nbsp;<span role='img' aria-label='cake'>🍰</span> {cake} Cake
     </div>
   )
 }

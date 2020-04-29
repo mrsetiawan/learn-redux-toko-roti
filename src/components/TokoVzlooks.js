@@ -4,7 +4,8 @@ import DonutAndCake from './DonutAndCake'
 import Bahan from './Bahan'
 import Cart from './Cart'
 //action
-import { donatCakeAction } from '../action/donatCakeAction'
+import { donatAction } from '../action/donatAction'
+import { cakeAction } from '../action/cakeAction'
 
 class TokoVzlooks  extends Component {
 
@@ -13,11 +14,11 @@ class TokoVzlooks  extends Component {
     const { tepung, coklat, keju } = this.props.bahan
     const { harga } = this.props.cart
     const { donat, cake } = this.props.donatcake
-
+    
     return (
       <>
         <Cart harga={harga} />
-        
+
         <div className='container'>
           <div className='header'>
             <span role='img' aria-label='cake'>🍰</span>
@@ -31,7 +32,7 @@ class TokoVzlooks  extends Component {
             <span role='img' aria-label='donuts'>🍩</span>
             <h3>Buat 1 Donat</h3>
           </div>
-          <div className='section-bottom'>
+          <div className='section-bottom' onClick={this.props.buatcake}>
             <span role='img' aria-label='cake'>🍰</span>
             <h3>Buat 1 Cake</h3>
           </div>
@@ -55,7 +56,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    buatdonat: () => dispatch(donatCakeAction)
+    buatdonat: () => dispatch(donatAction),
+    buatcake: () => dispatch(cakeAction)
   }
 }
 

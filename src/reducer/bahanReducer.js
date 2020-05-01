@@ -1,13 +1,13 @@
-//contoh initial state dengan kata lain membuat store
+// contoh initial state dengan kata lain membuat store
 const initialStateBahan = {
   tepung: 100,
   coklat: 100,
   donat: 0,
   cherry: 89,
   cake: 0
-}
+};
 
-//contoh reducer yang akan menerima 2 parameter yaitu (state,action) atau bisa disebut fungsi yg menerima state lama dan mengembalikan state baru
+// contoh reducer yang akan menerima 2 parameter yaitu (state,action) atau bisa disebut fungsi yg menerima state lama dan mengembalikan state baru
 const bahanReducer = (state = initialStateBahan, action) => {
   if (action.type = 'BUAT_DONAT_COKLAT') {
     const newState = {
@@ -16,10 +16,10 @@ const bahanReducer = (state = initialStateBahan, action) => {
       donat: state.donat + 1,
       cherry: state.cherry,
       cake: state.cake
-    }
+    };
     return newState;
-  }  
+  }
   return state;
-}
+};
 
 export default bahanReducer;

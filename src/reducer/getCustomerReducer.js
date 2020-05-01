@@ -1,17 +1,15 @@
 const initialState = [];
 
 const getCustomerReducer = (state = initialState, action) => {
-
   if (action.type = 'GET_DATA_CUSTOMER') {
-
     const newState = {
       customer: action.customers
-    }
+    };
 
-    return newState
+    return newState;
   }
 
-  return state
-}
+  return state;
+};
 
-export default getCustomerReducer
+export default getCustomerReducer;

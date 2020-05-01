@@ -1,12 +1,12 @@
-import { combineReducers } from 'redux'
-import bahanDonutCakeReducer from '../reducer/bahanDonutCakeReducer'
-import cartReducer from '../reducer/cartReducer'
-import donatCakeReducer from '../reducer/donatCakeReducer'
+import { combineReducers } from 'redux';
+import bahanDonutCakeReducer from './bahanDonutCakeReducer';
+import cartReducer from './cartReducer';
+import donatCakeReducer from './donatCakeReducer';
 
 const myReducer = combineReducers({
   bahan: bahanDonutCakeReducer,
-  donatcake:donatCakeReducer,
+  donatcake: donatCakeReducer,
   cart: cartReducer
-})
+});
 
-export default myReducer
+export default myReducer;

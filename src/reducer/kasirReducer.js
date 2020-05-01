@@ -1,9 +1,7 @@
 const initialState = {
-  nama: "Mr Setiawan"
-}
+  nama: 'Mr Setiawan'
+};
 
-const kasirReducer = (state = initialState, action) => {
-  return state
-}
+const kasirReducer = (state = initialState, action) => state;
 
 export default kasirReducer;

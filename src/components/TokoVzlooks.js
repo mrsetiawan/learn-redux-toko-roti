@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import DonutAndCake from './DonutAndCake';
 import Bahan from './Bahan';
 import Cart from './Cart';
+import TestComponent from './TestComponent';
 // action
 import { donatAction } from '../action/donatAction';
 import { cakeAction } from '../action/cakeAction';
@@ -14,9 +15,9 @@ class TokoVzlooks extends Component {
     const { donat, cake } = this.props.donatcake;
 
     return (
+      // eslint-disable-next-line react/jsx-filename-extension
       <>
         <Cart harga={harga} />
-
         <div className="container">
           <div className="header">
             <span role="img" aria-label="cake">🍰</span>
@@ -37,6 +38,9 @@ class TokoVzlooks extends Component {
           <div className="section-bottom">
             <span role="img" aria-label="cart">🛒</span>
             <h3>Isi Ulang Bahan</h3>
+          </div>
+          <div className="header">
+            <TestComponent myObj={{ nama: "muhamad rahmat setiawan", hobi: "ngoding" }} harga={harga} />
           </div>
         </div>
       </>

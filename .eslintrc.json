@@ -29,6 +29,7 @@
             "exports": "never",
             "functions": "never"
         }],
-        "eol-last": 0
+        "eol-last": 0,
+        "react/prefer-stateless-function": [0, { "ignorePureComponents": true }]
     }
 }

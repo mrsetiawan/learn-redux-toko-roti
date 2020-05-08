@@ -40,7 +40,7 @@ class TokoVzlooks extends Component {
             <h3>Isi Ulang Bahan</h3>
           </div>
           <div className="header">
-            <TestComponent myObj={{ nama: "muhamad rahmat setiawan", hobi: "ngoding" }} harga={harga} />
+            <TestComponent myObj={{ nama: 'muhamad rahmat setiawan', hobi: 'ngoding' }} harga={harga} />
           </div>
         </div>
       </>

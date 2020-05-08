@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/button-has-type */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { buatKasAction } from './action/buatKasAction';
@@ -11,6 +13,7 @@ class App extends Component {
     } = this.props;
 
     return (
+      // eslint-disable-next-line react/jsx-filename-extension
       <>
         <div className="wrap-first-section">
           <p>
